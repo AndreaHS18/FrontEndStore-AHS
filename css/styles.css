@@ -42,6 +42,7 @@ img {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    padding: 0 1rem;
 }
 
 /* Typography */
@@ -108,4 +109,45 @@ h1, h2, h3 {
 
 .navigation__link:hover, .navigation__link--active {
     color: var(--secondary);
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Products */
+.product {
+    background-color: var(--darkPrimary);
+    padding: 1rem;
+}
+
+.product__image {
+    width: 100%;
+}
+
+.product__information {}
+
+.product_name {
+    font-size: 4rem;
+}
+
+.product_price {
+    font-size: 2.8rem;
+    color: var(--secondary);
+}
+
+.product_name, .product_price {
+    font-family: var(--primarySource);
+    margin: 1rem 0;
+    text-align: center;
+    line-height: 1.2;
 }
