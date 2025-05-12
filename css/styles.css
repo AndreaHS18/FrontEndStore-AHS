@@ -8,7 +8,7 @@
     --primarySource: 'Staatliches', cursive;
 }
 
-/* Globales */
+/* Global */
 html {
     box-sizing: border-box;
     font-size: 62.5%;
@@ -39,12 +39,12 @@ img {
     max-width: 100%;
 }
 
-.contenedor {
+.container {
     max-width: 120rem;
     margin: 0 auto;
 }
 
-/* Tipografía */
+/* Typography */
 h1 {
     font-size: 4rem;
 }
@@ -80,14 +80,14 @@ h1, h2, h3 {
     margin-top: 2rem;
 }
 
-.footer__texto {
+.footer__text {
     font-family: var(--primarySource);
     text-align: center;
     font-size: 2.2rem;
 }
 
-/* Navegación */
-.navegacion {
+/* Navigation */
+.navigation {
     background-color: var(--darkPrimary);
     padding: 1rem 0;
     display: flex;
@@ -95,17 +95,17 @@ h1, h2, h3 {
     gap: 2rem;
 }
 
-.navegacion__enlace {
+.navigation__link {
     font-family: var(--primarySource);
     color: var(--white);
     font-size: 3rem;
     margin-right: 2rem;
 }
 
-.navegacion__enlace:last-of-type {
+.navigation__link:last-of-type {
     margin-right: 0;
 }
 
-.navegacion__enlace:hover, .navegacion__enlace--activo {
+.navigation__link:hover, .navigation__link--active {
     color: var(--secondary);
 }
